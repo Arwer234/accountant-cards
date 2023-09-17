@@ -2,16 +2,16 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
-				<Route path="/ksiegowi" Component={App} />
+				<Route path="/ksiegowi" element={<App />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	</React.StrictMode>
 );
