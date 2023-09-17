@@ -8,9 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
 	<React.StrictMode>
-		<BrowserRouter basename="/ksiegowi">
+		<BrowserRouter>
 			<Routes>
-				<Route path="/" Component={App} />
+				<Route path="/ksiegowi" Component={App} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
